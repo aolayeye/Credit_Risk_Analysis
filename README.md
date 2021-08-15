@@ -25,5 +25,8 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 ## Summary
 Our results show that the ensemble models outperform the sampling methods including the combination sampling method.
 
+#### Sampling Classifiers: Balanced Accuracy Score vs Ensemble Models
+![Sampling_Classifier_Bal_Acc_Score](https://user-images.githubusercontent.com/67847583/129494995-c70fac19-b564-4c08-9618-a3653f844d67.png)
+![Ensemble_Classifier_Bal_Acc_Score](https://user-images.githubusercontent.com/67847583/129495017-c9fcf950-2fb6-49ab-968c-2fac72263cff.png)
 
-
+#### Ensemble Models: 
