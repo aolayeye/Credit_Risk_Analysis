@@ -65,6 +65,7 @@ While the Ensemble Classifier has the best Precison of the models used, it still
 ![Sampling_Classifier_Recall_Precision](https://user-images.githubusercontent.com/67847583/129495158-cffeeaf3-b2f7-46c0-95cd-33bafccee29c.png)
 
 
+In identifying high_risk loans, we worry more about False Positives (Sensitivity). Since sensiivity is high for the Ensemble Classifier, False positives can be ruled out by calling the credit card holder. It’s more important to detect potentially fraudulent transactions, so sensitivity is more important here.
 While, the Ensemble Classifier outperforms all other classifiers tested, the model still does a poor job at predicting high_risk loans. We may want to revaluate our feature selection or test a different model that would perform better.
 
 
