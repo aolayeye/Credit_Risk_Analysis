@@ -15,10 +15,10 @@ Since we have imbalanced classes, we use the Balanced Accuracy score to measure 
 - Recall was 0.69 and 0.60 for high_risk and low_risk loans respectively for the oversampling method
 - Recall was 0.63 and 0.69 for high_risk and low_risk loans respectively for the SMOTE method
 - Recall was 0.69 and 0.40 for high_risk and low_risk loans respectively for the undrsampling method
-  - the low recall for the undersampling method for the low_risk loans is indicative of a large number of false negatives. 
+  - the low recall for the undersampling method for the low_risk loans is indicative of a large number of false positives. 
 - Recall was 0.75 and 0.58 for high_risk and low_risk loans respectively for the combination method
 - The combination sampling method had the best recall at 0.75 for correctly predicting high_risk loans
-- Precision for all the sampling methods performed poorly, only correctly predicting high_risk loans 1% of the time; this is indicative of a large number of false positives
+- Precision for all the sampling methods performed poorly, only correctly predicting high_risk loans 1% of the time; this is indicative of a large number of false negatives.
 #### Random Oversampling
 ![Results_Oversampling](https://user-images.githubusercontent.com/67847583/129494703-176be304-f99c-4316-8697-2464116cabca.png)
 
@@ -65,8 +65,10 @@ While the Ensemble Classifier has the best Precison of the models used, it still
 ![Sampling_Classifier_Recall_Precision](https://user-images.githubusercontent.com/67847583/129495158-cffeeaf3-b2f7-46c0-95cd-33bafccee29c.png)
 
 
-In identifying high_risk loans, we worry more about False Positives (Sensitivity). Since sensiivity is high for the Ensemble Classifier, False positives can be ruled out by calling the credit card holder. It’s more important to detect potentially fraudulent transactions, so sensitivity is more important here.
-While, the Ensemble Classifier outperforms all other classifiers tested, the model still does a poor job at predicting high_risk loans. We may want to revaluate our feature selection or test a different model that would perform better.
+In identifying high_risk loans, we worry more about False Negatives (Sensitivity) for the high_risk loans. It is more important that predicted high_risk loans are likely to be bad loans than to pick up all potential low_risk or good loans.
+Since Sentivity is highest for the Ensemble Classifier, we are sure that our model will minimize false negatives even when false positives may be higher. Lending Club will be better off not giving a  good loan than giving a bad loan.
+
+We may further evaluate our model performance by implementing a net rvenue function. The net revenue or cost function is derived by apportioning a cost for every false positive and false negative and arriving at the overall revenue based on the correct and incorrect predictions. This way we are able to determine the effect  of giving approving a bad loan versus denying a good loan and we would be able to determine if recall (sensitivity) or precision is most the most important to worry about.
 
 
 
