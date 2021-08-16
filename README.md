@@ -18,6 +18,8 @@ We use the logisic regression with different sampling methods.
 - Recall was 0.69 and 0.40 for high_risk and low_risk loans respectively for the undrsampling method
   - the low recall for the undersampling method for the low_risk loans is indicative of a large number of false negatives. 
 - Recall was 0.75 and 0.58 for high_risk and low_risk loans respectively for the combination method
+- The combination sampling method had the best recall at 0.75 for correctly predicting high_risk loans
+- Precision for all the sampling methods performed poorly, only correctly predicting high_risk loans 1% of the time; this is indicative of a large number of false positives
 #### Random Oversampling
 ![Results_Oversampling](https://user-images.githubusercontent.com/67847583/129494703-176be304-f99c-4316-8697-2464116cabca.png)
 
