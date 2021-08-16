@@ -51,7 +51,6 @@ While the Ensemble Classifier has the best Precison of the models used, it still
 ![Results_EasyEnsemble](https://user-images.githubusercontent.com/67847583/129494807-12e8e270-eeff-48ed-9416-8f553d97472d.png)
 
 ## Summary
-Our results show that the ensemble models outperform the sampling methods including the combination sampling method.
 
 #### Balanced Accuracy Score: Ensemble Models vs Sampling Classifiers
 ##### Ensemble Models
@@ -66,7 +65,7 @@ Our results show that the ensemble models outperform the sampling methods includ
 ![Sampling_Classifier_Recall_Precision](https://user-images.githubusercontent.com/67847583/129495158-cffeeaf3-b2f7-46c0-95cd-33bafccee29c.png)
 
 
-
+While, the Ensemble Classifier outperforms all other classifiers tested, the model still does a poor job at predicting high_risk loans. We may want to revaluate our feature selection or test a different model that would perform better.
 
 
 
