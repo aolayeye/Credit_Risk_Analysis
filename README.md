@@ -5,10 +5,8 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 
 ## Results
 #### Logistic Regression with Diifferent Sampling Methods
-We use the logisic regression with different sampling methods.
-
 ##### Balanced Accuracy Score
-- Since we have imbalanced classes, we use the Balanced Accuracy score to measure how well our Logistic Regression performs with the different sampling methods
+Since we have imbalanced classes, we use the Balanced Accuracy score to measure how well our Logistic Regression performs with the different sampling methods.
 - Random Oversampling: For the Random Oversampling, our Balanced Accuracy Score is 0.65 meaning that the model was correct (in predicting high_risk and low_risk loans) 65% of the time.
 - SMOTE Sampling: Balanced Accuracy Score for the SMOTE sampling method sligly ouperformed the Random Sampling method at 66%
 - Undersampling: With a Balanced Accuracy Score of 54%, the undersampling technique had the worst performnce of the different sampling methods.
