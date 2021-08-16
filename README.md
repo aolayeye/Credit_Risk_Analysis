@@ -4,7 +4,7 @@
 Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, we will oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, we will use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, we will compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. In the end, we will evaluate the performance of these models and make a recommendation on whether they should be used to predict credit risk.
 
 ## Results
-#### Logistic Regression with Diifferent Sampling Methods
+#### Logistic Regression with Different Sampling Methods
 ##### Balanced Accuracy Score
 Since we have imbalanced classes, we use the Balanced Accuracy score to measure how well our Logistic Regression performs with the different sampling methods.
 - Random Oversampling: For the Random Oversampling, our Balanced Accuracy Score is 0.65 meaning that the model was correct (in predicting high_risk and low_risk loans) 65% of the time.
@@ -30,6 +30,19 @@ Since we have imbalanced classes, we use the Balanced Accuracy score to measure 
 
 #### Combination (Over and Under) Sampling
 ![Results_Combination_Sampling](https://user-images.githubusercontent.com/67847583/129494779-d548816c-4383-4775-bf22-304a0efbd6e5.png)
+
+
+#### Random Forest and Easy Ensemble Classifier
+##### Balanced Accuracy Score
+- Random Forest: With a balanced accuracy score of 79%, the Random Forest clasifier outperforms the logistic regression with different sampling techniques
+- Easy Ensemble Classifier: With a balanced accuracy score of 93%, the Easy Ensemble Classifier outperforms variations of the logistic regression used for the project including the Random Forest Classifier
+
+##### Recall and Precision
+- Recall was 0.70 and 0.87 for high_risk and low_risk loans respectively for the Random Forest
+- Recall was 0.92 and 0.94 for high_risk and low_risk loans respectively for the Easy Ensemble Classifier
+- Precision for high_risk loans was 0.03 and 0.09 for the Random Forest and the Easy Ensemble Classifier respectively.
+
+While the Ensemble Classifier has the best Precison of the models used, it still does a poor job at correctly pedicting high_risk loans
 
 #### Random Forest
 ![Results_Random_Forest](https://user-images.githubusercontent.com/67847583/129494795-d74a3c45-0083-465e-a68c-4f6d6d0ef86d.png)
