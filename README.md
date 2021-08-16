@@ -1,7 +1,9 @@
 # Credit_Risk_Analysis
 ## Overview
 
-Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, we will oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, we will use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, we will compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. In the end, we will evaluate the performance of these models and make a recommendation on whether they should be used to predict credit risk.
+In this project, we apply machine learning techniques to predict credit risk. The goal is to provide a quicker, more reliable loan process and more accurate identification of suitable candidates for loans, leading to low loan default rates. We will build several machine learning algorithms to predict credit risk. We would use techniques such as resampling to make the most of our dataset. Once we have designed and implemented these algorithms, we evaluate their performance and see how well the models predict data.
+
+Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, we will oversample the data using the RandomOverSampler and SMOTE algorithms and undersample the data using the ClusterCentroids algorithm. Then, we will use a combinatorial approach of over-and undersampling using the SMOTEENN algorithm. Next, we will compare two new machine learning models that reduce bias, BalancedRandomForestClassifier, and EasyEnsembleClassifier, to predict credit risk. In the end, we will evaluate the performance of these models and recommend whether any of the models should be used to predict credit risk.
 
 ## Results
 #### Logistic Regression with Different Sampling Methods
@@ -65,10 +67,10 @@ While the Ensemble Classifier has the best Precison of the models used, it still
 ![Sampling_Classifier_Recall_Precision](https://user-images.githubusercontent.com/67847583/129495158-cffeeaf3-b2f7-46c0-95cd-33bafccee29c.png)
 
 ##### Recommendation
-In identifying high_risk loans, we worry more about False Negatives (Sensitivity) for the high_risk loans. It is more important that predicted high_risk loans are likely to be bad loans than to pick up all potential low_risk or good loans.
-Since Sentivity is highest for the Ensemble Classifier, we are sure that our model will minimize false negatives even when false positives may be higher. Lending Club will be better off not giving a  good loan than giving a bad loan.
+In identifying high_risk loans, we worry more about False Negatives (Sensitivity) for the high_risk loans. Predicting high_risk loans that are likely to be bad is more critical than predicting all potential low_risk or good loans.
+Since Sensitivity is highest for the Ensemble Classifier, we are sure that our model will minimize false negatives even when false positives may be higher. Lending Club will be better off not giving a  good loan than giving a bad loan.
 
-We may further evaluate our model performance by implementing a net rvenue function. The net revenue or cost function is derived by apportioning a cost for every false positive and false negative and arriving at the overall revenue based on the correct and incorrect predictions. This way we are able to determine the effect  of giving approving a bad loan versus denying a good loan and we would be able to determine if recall (sensitivity) or precision is most the most important to worry about.
+We may further evaluate our model performance by implementing a net revenue function. The net revenue or cost function is derived by apportioning a cost for every false positive and false negative and arriving at the overall revenue based on the correct and incorrect predictions. This way, we can determine the effect of approving a bad loan versus denying a good loan, and we would be able to determine if recall (Sensitivity) or precision is the most critical performance metric to evaluate.
 
 
 
