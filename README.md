@@ -64,7 +64,7 @@ While the Ensemble Classifier has the best Precison of the models used, it still
 ##### Sampling Methods
 ![Sampling_Classifier_Recall_Precision](https://user-images.githubusercontent.com/67847583/129495158-cffeeaf3-b2f7-46c0-95cd-33bafccee29c.png)
 
-
+##### Recommendation
 In identifying high_risk loans, we worry more about False Negatives (Sensitivity) for the high_risk loans. It is more important that predicted high_risk loans are likely to be bad loans than to pick up all potential low_risk or good loans.
 Since Sentivity is highest for the Ensemble Classifier, we are sure that our model will minimize false negatives even when false positives may be higher. Lending Club will be better off not giving a  good loan than giving a bad loan.
 
