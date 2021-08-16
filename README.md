@@ -16,7 +16,7 @@ We use the logisic regression with different sampling methods.
 - Recall was 0.69 and 0.60 for high_risk and low_risk loans respectively for the oversampling method
 - Recall was 0.63 and 0.69 for high_risk and low_risk loans respectively for the SMOTE method
 - Recall was 0.69 and 0.40 for high_risk and low_risk loans respectively for the undrsampling method
-      - the low recall for the undersampling method for the low_risk loans is indicative of a large number of false negatives. 
+  - the low recall for the undersampling method for the low_risk loans is indicative of a large number of false negatives. 
 - Recall was 0.75 and 0.58 for high_risk and low_risk loans respectively for the combination method
 #### Random Oversampling
 ![Results_Oversampling](https://user-images.githubusercontent.com/67847583/129494703-176be304-f99c-4316-8697-2464116cabca.png)
