@@ -4,14 +4,15 @@
 Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, we will oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, we will use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, we will compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. In the end, we will evaluate the performance of these models and make a recommendation on whether they should be used to predict credit risk.
 
 ## Results
+#### Logistic Regression with Diifferent Sampling Methods
 We use the logisic regression with different sampling methods.
 
 ##### Balanced Accuracy Score
 - Since we have imbalanced classes, we use the Balanced Accuracy score to measure how well our Logistic Regression performs with the different sampling methods
-- For the Random Sampling, our Balanced Accuracy Score is 0.65 meaning that the model was correct (in predicting high_risk and low_risk loans) 65% of the time.
-- Balanced Accuracy Score for the SMOTE sampling method sligly ouperformed the Random Sampling method at 66%
-- With a Balanced Accuracy Score of 54%, the undersampling technique had the worst performnce of the different sampling methods.
-- The Combination sampling method had similar performance with the Oversampling and SMOTE sampling with 66%
+- Random Oversampling: For the Random Oversampling, our Balanced Accuracy Score is 0.65 meaning that the model was correct (in predicting high_risk and low_risk loans) 65% of the time.
+- SMOTE Sampling: Balanced Accuracy Score for the SMOTE sampling method sligly ouperformed the Random Sampling method at 66%
+- Undersampling: With a Balanced Accuracy Score of 54%, the undersampling technique had the worst performnce of the different sampling methods.
+- Combination Sampling: The Combination sampling method had similar performance with the Oversampling and SMOTE sampling with 66%
 ##### Recall and Precision
 - Recall was 0.69 and 0.60 for high_risk and low_risk loans respectively for the oversampling method
 - Recall was 0.63 and 0.69 for high_risk and low_risk loans respectively for the SMOTE method
